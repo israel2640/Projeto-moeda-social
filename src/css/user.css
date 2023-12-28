@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  background-color: #C4CAD0;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  order: -1;
+  /* Muda a ordem dos ícones de hambúrguer para aparecer no lado esquerdo */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.saldo-container {
+  width: 150px;
+  /* Largura desejada para o botão */
+  background-color: bisque;
+  /* Cor de fundo do botão */
+  color: #ffffff;
+  /* Cor do texto do botão */
+  padding: 10px 20px;
+  /* Espaçamento interno do botão */
+  border: none;
+  /* Remove a borda do botão */
+  border-radius: 5px;
+  /* Borda arredondada */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  text-align: center;
+  margin: 20px;
+  /* Adiciona um espaçamento entre o menu e o saldo */
+  margin: 10px auto 0;
+  /* Centraliza o botão horizontalmente */
+}
+
+.saldo {
+  color: #333;
+  /* Muda a cor do saldo para se destacar do fundo escuro do navbar */
+  font-weight: bold;
+
+}
+
+@media (max-width: 1500px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    margin-left: 10px;
+    /* Adiciona um espaçamento à esquerda para afastar do canto */
+  }
+}
+
+/* Estilo das imagens */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin: 20px auto;
+  /* Centraliza o container na página */
+}
+
+.image-container a {
+  text-decoration: none;
+  color: inherit;
+  /* Herda a cor do texto padrão para remover a sublinhado do link */
+  display: block;
+  /* Transforma o link em bloco para que a borda envolva a imagem e o texto */
+  border: 2px solid #333;
+  /* Adiciona uma borda de 2px sólida em volta do link */
+  padding: 10px;
+  /* Adiciona um espaçamento interno ao redor do link */
+  border-radius: 5px;
+  /* Adiciona bordas arredondadas */
+}
+
+.image-container img {
+  max-width: 100%;
+  /* Ajusta a largura máxima da imagem para não ultrapassar o contêiner */
+  height: auto;
+  /* Garante que a proporção da imagem seja mantida */
+}
+
+.image-container p {
+  margin: 10px 0;
+  color: #333;
+  /* Adiciona cor ao texto da descrição */
+}
