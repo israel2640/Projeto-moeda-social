@@ -6,10 +6,10 @@ async function realizarLogin() {
       alert('Login ou senha inválidos.');
   
     } else {
-        window.open('file:///F:/CURSO%20DE%20JS/Projeto%20moeda%20social/src/user.html', '_blank');
+        window.open('file:///F:/CURSO%20DE%20JS/Projeto-moeda-social/src/user.html', '_blank');
       try {
         // Simulação de uma requisição para o servidor
-        const response = await fetch('file:///F:/CURSO%20DE%20JS/Projeto%20moeda%20social/src/user.html', {
+        const response = await fetch('file:///F:/CURSO%20DE%20JS/Projeto-moeda-social/src/user.html', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ async function realizarLogin() {
         if (data.success) {
           alert(data.message);
           // Redireciona para a página desejada após o login
-          window.location.href = 'file:///F:/CURSO%20DE%20JS/Projeto%20moeda%20social/src/user.html';
+          window.location.href = 'file:///F:/CURSO%20DE%20JS/Projeto-moeda-social/src/user.html';
         } else {
           alert('Matrícula ou senha inválidos. Solicitação não encontrada no banco de dados.');
         }

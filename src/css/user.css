@@ -3,7 +3,7 @@ body {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  background-color: #C4CAD0;
+  background-color: #c4c6d0;
 }
 
 .navbar {
@@ -51,7 +51,7 @@ body {
 .saldo-container {
   width: 150px;
   /* Largura desejada para o botão */
-  background-color: bisque;
+  background-color: rgb(23, 45, 238);
   /* Cor de fundo do botão */
   color: #ffffff;
   /* Cor do texto do botão */
@@ -71,7 +71,7 @@ body {
 }
 
 .saldo {
-  color: #333;
+  color: white;
   /* Muda a cor do saldo para se destacar do fundo escuro do navbar */
   font-weight: bold;
 
