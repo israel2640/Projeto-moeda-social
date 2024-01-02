@@ -66,7 +66,7 @@
 
     <!-- Botão para enviar dados ao back-end -->
     <button onclick="enviarDados()">Enviar</button>
-    <button onclick="abrirNovaGuia()">Login</button>
+    <button onclick="abrirNovaPagina()">Login</button>
 
     <!-- Div para exibir a mensagem -->
     <div id="mensagem"></div>
@@ -75,9 +75,9 @@
   <script src="./js/cadastro.js"></script>
 
   <script>
-    // Função para abrir uma nova guia
-    function abrirNovaGuia() {
-      window.open('file:///F:/CURSO%20DE%20JS/Projeto%20moeda%20social/index.html', '_blank');
+    // Função para abrir uma nova guia na mesma pagina
+    function abrirNovaPagina() {
+      window.location.href = '../index.html';
     }
   </script>
 </body>
